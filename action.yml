@@ -1,0 +1,21 @@
+name: 'Tencent Cloud CLI Action'
+description: 'GitHub Action for Tencent Cloud API 3.0 Command Line Interface'
+inputs:
+  secret_id:
+    description: 'Tencent cloud secret id. Should be referred to a encrypted environment variable'
+    required: true
+  secret_key:
+    description: 'Tencent cloud secret key. Should be referred to a encrypted environment variable'
+    required: true
+  region:
+    description: 'Tencent Cloud product region'
+    required: true
+  commands:
+    description: 'Tencent Cloud CLI commands. Mult commands seperate by `&&`'
+    required: true
+  output_format:
+    description: 'Data format of command output. Available values are `json`, `table`, `text`. Default is `json`'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
