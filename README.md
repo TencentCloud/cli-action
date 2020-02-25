@@ -26,7 +26,7 @@ GitHub Action for Tencent Cloud API 3.0 Command Line Interface
 ## Example usage
 
 ```
-uses: TencentCloud/cli-action@master
+uses: TencentCloud/cli-action@v1
 with:
   secret_id: ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
   secret_key: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
